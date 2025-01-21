@@ -1,0 +1,59 @@
+[
+    {
+        "id": "1EhJiEnJNUI15JVT",
+        "name": "Gemsbok",
+        "photo": "/media/antelope_.png",
+        "photoWidth": "450px",
+        "photoHeight": "auto",
+        "content": "The gemsbok (Oryx gazella), also known as the South African oryx, is a large antelope native to the arid regions of Southern Africa, including Botswana, Namibia, South Africa, and parts of Zimbabwe. They are particularly adapted to survive in the Kalahari and Namib Deserts. Gemsboks are characterized by their striking appearance, featuring pale gray to tan bodies with contrasting black and white markings on the face and legs. Both males and females possess long, straight horns that can reach up to 85 centimeters in length. These horns are used for defense against predators and during intraspecific competition.<br><br>Image Processing: Rotation<br>The image is rotated by various degrees: 30°, 60°, 120°, 150°, and 180°. This transformation alters the orientation of the image without changing its content or proportions."
+    },
+    {
+        "id": "2IWxxsqyQ2iCZnVG",
+        "name": "Giraffe",
+        "photo": "/media/giraffe_.png",
+        "photoWidth": "600px",
+        "photoHeight": "auto",
+        "content": "The giraffe is the tallest land animal, recognized by its long neck and legs, and distinctive coat patterns. Native to African savannas and open woodlands, giraffes primarily feed on leaves from tall trees, especially acacias. Their height and specialized tongue allow them to reach foliage inaccessible to other herbivores.<br><br>Image Processing: Edge Detection and Filters<br><strong>Edge Detection</strong>: The edges of the image are detected using Pillow's edge-detection algorithm.<br><strong>Smooth and Emboss</strong>: After edge detection, the image is smoothed to reduce noise, and an emboss filter is applied to give a 3D-like appearance.<br><strong>Canny Edge Detection</strong>: OpenCV's Canny algorithm is then applied to detect sharp edges in the image for enhanced accuracy in edge recognition."
+    },
+    {
+        "id": "36dEzijYEYd5Nnlr",
+        "name": "Leopard",
+        "photo": "/media/leopard_.png",
+        "photoWidth": "600px",
+        "photoHeight": "auto",
+        "content": "Leopards are large felines known for their spotted coats and remarkable adaptability to various habitats, including savannas, forests, and mountains across Africa and parts of Asia. They are solitary and predominantly nocturnal predators, with a diet ranging from small rodents to larger ungulates.<br><br>Image Processing: Channel Splitting<br>The image is split into its red, green, and blue (RGB) channels. This allows each color component to be analyzed or processed independently, which can be useful for tasks like color-based segmentation or feature enhancement."
+    },
+    {
+        "id": "4s6h65Ud9Yw2ve3u",
+        "name": "Meerkat",
+        "photo": "/media/meerkat_.png",
+        "photoWidth": "600px",
+        "photoHeight": "auto",
+        "content": "Meerkats are small, social mammals belonging to the mongoose family. Inhabiting the arid regions of southern Africa, they live in groups called mobs or clans. Meerkats are known for their upright posture while on the lookout for predators and their cooperative behavior within the group.<br><br>Image Processing: Cropping<br>The image is cropped by defining specific x-axis and y-axis coordinates. This process focuses on a region of interest (ROI) while discarding irrelevant or unwanted areas of the image."
+    },
+    
+    {
+        "id": "5MwNhVfxse9G5ye8",
+        "name": "Rhinoceros",
+        "photo": "/media/rhino_.png",
+        "photoWidth": "450px",
+        "photoHeight": "auto",
+        "content": "Rhinoceroses are large, thick-skinned herbivores characterized by one or two horns on their snouts. There are several species, with the black and white rhinos native to Africa. They inhabit savannas and grasslands, feeding on a variety of vegetation. Rhinos are currently endangered due to poaching and habitat loss.<br><br>Image Processing: Blurring<br>The image is blurred using various kernel sizes:<br><strong>20x20</strong>: A small blur that slightly smooths the image.<br><strong>50x50</strong>: A more intense blur for general smoothing.<br><strong>33x33 with sigma 0</strong>: A Gaussian blur with no additional control over spread.<br><strong>33x33 with sigma 10 and 90</strong>: Gaussian blur with different levels of spread (sigma), resulting in varying levels of detail suppression."
+    },
+    {
+        "id": "6ban06eYD6WFWyX0",
+        "name": "Vulture",
+        "photo": "/media/vulture_.png",
+        "photoWidth": "460px",
+        "photoHeight": "auto",
+        "content": "Vultures are scavenging birds of prey, crucial to the ecosystem for their role in consuming carrion, thus preventing the spread of disease. They have strong beaks and a highly acidic digestive system to process decaying flesh. Vultures are found on every continent except Australia and Antarctica.<br><br>Image Processing: Image Morphology<br><strong>Dilation</strong>: Expands bright areas or shrinks dark areas in the image to enhance edges or close gaps.<br><strong>Erosion</strong>: Shrinks bright areas or expands dark areas to remove small noise or details.<br><strong>Opening</strong>: Erosion followed by dilation, useful for removing noise while retaining the shape of objects.<br><strong>Closing</strong>: Dilation followed by erosion, used to fill small holes or gaps in objects."
+    },
+    {
+        "id": "772hUGO1QSHPkzT5",
+        "name": "Zebra",
+        "photo": "/media/zebra_.png",
+        "photoWidth": "600px",
+        "photoHeight": "auto",
+        "content": "Zebras are African equids known for their distinctive black-and-white striped coats. They inhabit various regions, including savannas and grasslands. Zebras are social animals, often forming large herds, and their stripes are believed to serve as camouflage and a deterrent to insects.<br><br>Image Processing: Otsu's Algorithm and Histogram Comparison<br><strong>Otsu's Algorithm</strong>: An adaptive thresholding technique that calculates the optimal threshold to separate foreground and background based on the image histogram.<br><strong>Histogram Comparison</strong>: The histogram of the processed image is compared to the original to analyze the effectiveness of the thresholding in isolating features or objects."
+    }
+]
